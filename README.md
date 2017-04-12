@@ -1,5 +1,5 @@
 # BearMaps on Quilt
-This tutorial will walk you through how to run BearMaps with Quilt. By the end, you will have your BearMaps application hosted in the Amazon AWS cloud, where it is accessible to you and the rest of the world.
+This tutorial will walk you through how to run BearMaps with [Quilt](http://quilt.io/). By the end, you will have your BearMaps application hosted in the [Amazon AWS cloud](https://aws.amazon.com/), where it is accessible to you and the rest of the world.
 
 The instructions assume that Windows users use GitBash. If you don't, just make sure to change the directory paths accordingly.
 
@@ -23,26 +23,27 @@ Your AWS account is now ready!
 
 ## Installing Quilt
 
-Go to [Quilt's GitHub page](https://github.com/quilt/quilt), and press the [![alt text](./img/release_button.png "Release Button")](https://github.com/quilt/quilt/releases) button.
+Go to the [releases page on Quilt’s github](https://github.com/quilt/quilt/releases).
 
 ### Windows
-1. Click on `quilt.exe` to install Quilt.
-	* You might get a warning saying `quilt.exe is not commonly downloaded and could harm your computer`. Because we made the release especially for you, it is not yet "commonly downloaded." You can safely click `Run`.
-2. In your terminal, navigate to the location of `quilt.exe` (this will be `~\Downloads` by default), and run `./quilt`. If Quilt is succesfully installed, you should see output starting with `Usage: quilt ...`.
+1. Click on `quilt_windows.zip` to install Quilt.
+2. In your terminal, navigate to the location of `quilt_windows.zip` (this will be `~\Downloads` by default, but you are free to move it), and unzip the file: `unzip quilt_windows.zip`.
+3. From the same directory, run `./quilt`. If Quilt is succesfully installed, you should see output starting with `Usage: quilt ...`.
 
 ### Mac
 
-1. Click on `quilt` to download Quilt.
-2. **TODO**
-3.  Run `quilt` from the terminal. Quilt is succesfully installed if the output starts with `Usage: quilt ...`.
+1. Click on `quilt_mac.tgz` to download Quilt.
+2. In the terminal, move the Quilt binary by running `mv ~/Downloads/quilt /usr/local/bin/quilt`.
+3. Run `quilt` from the terminal. Quilt is succesfully installed if the output starts with `Usage: quilt ...`.
 
 ## Run BearMaps
 
 The rest of the instructions are practically the same for Windows and Mac. The only difference is that if you're on Windows, you need to use `./quilt` instead of `quilt` and make sure you're in the directory containing `quilt.exe`.
 
-1. We made a Quilt specification for you to deploy BearMaps. You can get it by running `quilt get github.com/quilt/bear-maps`. The code is now in `~/.quilt/github.com/quilt/bear-maps`.
+1. We made a [Quilt specification](https://github.com/quilt/bear-maps) for you to deploy BearMaps. You can get it by running `quilt get github.com/quilt/bear-maps`. The code is now in `~/.quilt/github.com/quilt/bear-maps`.
 2. Open the file `~/.quilt/github.com/quilt/bear-maps/main.js`. Change the `PROJ_PATH` variable to be the path to your BearMaps code (the directory that contains the `pom.xml` file). Use an absolute path like `/Users/Josh/cs61b/abc/proj3`.
 3. Open one more terminal window. In one of them, run `quilt daemon` (it is supposed to keep running), and in the other terminal, run `quilt run github.com/quilt/bear-maps/main.js`.
+	* If you're using GitBash, you can open a second terminal by holding down the `shift` key and clicking the GitBash icon in the task bar.
 
 ## Accessing Your BearMaps
 Quilt is now setting up your virtual machines (VMs) and container (lightweight VM) in the Amazon AWS cloud.
