@@ -29,8 +29,6 @@ edition, soon-to-be collector's item sticker of Josh Hug in a trash can:
 <img align="center" src="./img/hughex.png" width="150">
 </p>
 
-The stickers are in the mail, but will be here soon!
-
 ## Deploying BearMaps
 We have made everything ready for you. You just need to set up an AWS account,
 install Quilt, and finally change a single line of code the Quilt BearMaps spec
