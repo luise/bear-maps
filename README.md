@@ -93,6 +93,8 @@ The rest of the instructions are practically the same for Windows and Mac. The
 only difference is that if you're on Windows, you need to use `./quilt` instead
 of `quilt` and make sure you're in the directory containing `quilt.exe`.
 
+** *Note: Quilt will not work on the **CalVisitor** wifi* **
+
 1. We made a [Quilt specification](https://github.com/quilt/bear-maps) for you
 to deploy BearMaps. You can get it by running `quilt get github.com/quilt/bear-maps`.
 The code is now in `~/.quilt/github.com/quilt/bear-maps`.
