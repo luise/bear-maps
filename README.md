@@ -51,8 +51,9 @@ anything for just running BearMaps.
 In the pop up window, click `Continue to Security Credentials`.
 4. Click `Access Keys (Access Key ID and Secret Access Key)` and then `Create
 New Access Key` to download your AWS key and key ID.
-5. Put the key and ID in a file called `~/.aws/credentials`. This credentials
-file must be formatted *exactly* like this:
+5. Run `mkdir ~/.aws` to create the `~/.aws` directory. Then put the key
+and ID in a file called `~/.aws/credentials`. This credentials file must be
+formatted *exactly* like this:
 
 ```bash
 [default]
