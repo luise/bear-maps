@@ -131,7 +131,9 @@ the public IP address and port shown in the `quilt ps` output - in this case
 `54.183.134.153:4567`. Now that your BearMaps is running in the cloud, anyone
 can access it in their browser using the same IP address!
 
-### Stopping Quilt
+### IMPORTANT: Stopping Quilt
+**If you don't do this within 2 weeks, AWS will charge you around $10 for
+leaving your VMs running**.
 When you're done enjoying your great work, run `quilt stop` to shut down the
 VMs. In the terminal that's running `quilt daemon`, wait for it to say
 `Successfully stopped machines` and then exit with Ctrl+c.
