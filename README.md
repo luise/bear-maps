@@ -1,33 +1,14 @@
 # BearMaps on Quilt
+**This repository is no longer maintained.**
+
 This tutorial will walk you through how to run BearMaps with
 [Quilt](http://quilt.io/). Right now, your application is only accessible from
 your laptop, but by the end of this tutorial, your BearMaps application will be
 hosted in the [Amazon AWS cloud](https://aws.amazon.com/), where it is
 accessible to you, your friends, parents, pets, and the rest of the world.
 
-## Quilt
-Before we dive into it, you might want to know what [Quilt](http://quilt.io) is.
-[Quilt](http://quilt.io) is a research project here at UC Berkeley and is fueled
-in part by lots of CS61B spirit in form of current TAs Matt and Vivian, and
-previous TAs Kay and Luise. Quilt's goal is to be the easiest way to deploy
-applications -- just like BearMaps -- in the cloud. We, the Quilt team, will be
-on Piazza to help out if you run into any issues!
-
-It would be a big help for us if you star the [Quilt project on
-GitHub](http://github.com/quilt/quilt). You will get absolutely no
-notifications, emails, or other stuff from us by doing it - it is just like
-"liking" a photo on Facebook. By staring the project, you’re letting others on
-GitHub know they should check it out - and maybe one day it will be cool to say
-you were one of the intitial users. Who knows? You can star the project by
-pressing the button in the top right corner that looks like this:
-[![GitHub-Star](./img/github-star.png)](http://github.com/quilt/quilt).
-
-To thank you for your time, you can come to 420 Soda and pick up a limited
-edition, soon-to-be collector's item sticker of Josh Hug in a trash can:
-
-<p align="center">
-<img align="center" src="./img/hughex.png" width="150">
-</p>
+[Quilt](http://quilt.io) is a research project at UC Berkeley aiming to be the
+easiest way to deploy applications -- just like BearMaps -- in the cloud.
 
 ## Deploying BearMaps
 We have made everything ready for you. You just need to set up an AWS account,
